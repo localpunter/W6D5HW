@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TEST</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="team" class="primary">Team Name</label>
+          <input type="text" id="team" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="stadium" class="primary">Stadium Name</label>
+          <input type="text" id="stadium" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="leagueWin" class="primary">Have they won the league?</label>
+          <div>
+              <input type="radio" id="yes" name="win" value="Have won the league" checked/>
+              <label for="yes">Yes</label>
+          </div>
+
+          <div>
+              <input type="radio" id="no" name="win" value="Never won the league" />
+              <label for="no">No</label>
+          </div>
+
+          <div>
+              <input type="radio" id="Nochance" name="win" value="Not a chance of <br/>winning the league!" />
+              <label for="Nochance">Not a chance!</label>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label for="capacity" class="primary">Stadium Capacity</label>
+          <input type="range" min = "10000" max = "100000" step = "10000" id="capacity" required/>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <pre id="log">
+    </pre>
+
+      <button id="delete-all">Delete All</button>
+
+      <h1>Football Club List</h1>
+      <div id="club-list"></div>
+
+  </body>
+</html>
