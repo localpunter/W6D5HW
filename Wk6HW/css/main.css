@@ -1,3 +1,14 @@
+head {
+  font-family: Verdana;
+}
+
+.search-control > input,
+.search-control > button {
+  background-color: #e4f0f5;
+  color: #29627e;
+  font-size: 1.0rem;
+}
+
 body {
   font-family: Verdana;
 }
@@ -5,7 +16,7 @@ body {
 #form-wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .form-item {
@@ -13,7 +24,7 @@ body {
 }
 
 label.primary {
-  display: block;
+  display: flex;
   margin: 0.4em 0;
 }
 
@@ -25,16 +36,16 @@ button, input[type="submit"] {
   margin-top: 1rem;
 }
 
-#reading-list {
+#club-list {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
 }
 
-.reading-list-item {
+.club-list-item {
   margin: 0.5rem 0.5rem;
   padding: 0.5rem 0.8rem;
   border: 1px solid #20437c;
   border-radius: 5%;
-  background: #ddeaff;
+  background: #ccffcc;
 }

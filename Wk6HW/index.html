@@ -1,57 +1,67 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TEST</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="js/app.js"></script>
-  </head>
-  <body>
-    <form id="new-item-form">
-      <div id="form-wrapper">
-        <div class="form-item">
-          <label for="team" class="primary">Team Name</label>
-          <input type="text" id="team" required/>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <title>TEST</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <script src="js/app.js"></script>
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="search-control">
+        <label for="mySearch">Search for Team by ID</label>
+        <input type="search" id="mySearch" name="q"
+        placeholder="First 3 letters of team followed by 4 numbers from year founded"
+        size="30" pattern="[A-z]{3}[0-9]{4}">
+        <button>Search</button>
+        <span class="validity"></span>
+      </div>
+    </head>
+    <body>
+      <form id="new-item-form">
+        <div id="form-wrapper">
+          <div class="form-item">
+            <label for="team" class="primary">Team Name</label>
+            <input type="text" id="team" required/>
+          </div>
 
-        <div class="form-item">
-          <label for="stadium" class="primary">Stadium Name</label>
-          <input type="text" id="stadium" required/>
-        </div>
+          <div class="form-item">
+            <label for="stadium" class="primary">Stadium Name</label>
+            <input type="text" id="stadium" required/>
+          </div>
 
-        <div class="form-item">
-          <label for="leagueWin" class="primary">Have they won the league?</label>
-          <div>
+          <div class="form-item">
+            <label for="leagueWin" class="primary">Have they won the league?</label>
+            <div>
               <input type="radio" id="yes" name="win" value="Have won the league" checked/>
               <label for="yes">Yes</label>
-          </div>
+            </div>
 
-          <div>
+            <div>
               <input type="radio" id="no" name="win" value="Never won the league" />
               <label for="no">No</label>
-          </div>
+            </div>
 
-          <div>
-              <input type="radio" id="Nochance" name="win" value="Not a chance of <br/>winning the league!" />
+            <div>
+              <input type="radio" id="Nochance" name="win" value="Not a chance of winning the league!" />
               <label for="Nochance">Not a chance!</label>
+            </div>
           </div>
-        </div>
 
-        <div class="form-item">
-          <label for="capacity" class="primary">Stadium Capacity</label>
-          <input type="range" min = "10000" max = "100000" step = "10000" id="capacity" required/>
-        </div>
-      </div>
-      <input type="submit" value="save"/>
-    </form>
+          <div class="form-item">
+            <label for="capacity" class="primary">Stadium Capacity</label>
+            <input type="range" min = "10000" max = "100000" step = "10000" id="capacity" required/>
+          </div>
 
-    <pre id="log">
-    </pre>
+          <input type="submit" value="save"/>
+        </form>
 
-      <button id="delete-all">Delete All</button>
+        <pre id="log">
+        </pre>
 
-      <h1>Football Club List</h1>
-      <div id="club-list"></div>
+        <button id="delete-all">Delete All</button>
 
-  </body>
-</html>
+        <h1>Football Club List</h1>
+        <div id="club-list"></div>
+
+      </body>
+      </html>

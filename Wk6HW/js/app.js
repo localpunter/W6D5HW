@@ -40,6 +40,11 @@ const createClubListItem = function (form) {
   capacity.textContent = form.capacity.value;
   clubListItem.appendChild(capacity);
 
+  const mySearch = document.createElement('p');
+  // mySearch.textContent = form.mySearch.value;
+  searchTerms = mySearch.value;
+  clubListItem.appendChild(mySearch);
+
   return clubListItem;
 }
 
