@@ -2,15 +2,17 @@ head {
   font-family: Verdana;
 }
 
+
+
+body {
+  font-family: Verdana;
+}
+
 .search-control > input,
 .search-control > button {
   background-color: #e4f0f5;
   color: #29627e;
-  font-size: 1.0rem;
-}
-
-body {
-  font-family: Verdana;
+  font-size: 1.rem;
 }
 
 #form-wrapper {

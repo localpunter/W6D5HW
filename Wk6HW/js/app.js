@@ -1,8 +1,13 @@
 // console.log('app loaded:', window);
 
-document.addEventListener('DOMContentLoaded', () => {
-  const newItemform = document.querySelector('#new-item-form');
-  newItemform.addEventListener('submit', handleNewItemFormSubmit);
+// document.addEventListener('DOMContentLoaded', () => {
+//   const newSearch = document.querySelector('#search');
+//   newSearch.addEventListener('submit', handleNewSearch);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const newItemform = document.querySelector('#new-item-form');
+    newItemform.addEventListener('submit', handleNewItemFormSubmit);
+
 
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
@@ -40,10 +45,10 @@ const createClubListItem = function (form) {
   capacity.textContent = form.capacity.value;
   clubListItem.appendChild(capacity);
 
-  const mySearch = document.createElement('p');
-  // mySearch.textContent = form.mySearch.value;
-  searchTerms = mySearch.value;
-  clubListItem.appendChild(mySearch);
+  // const mySearch = document.createElement('p');
+  // mySearch.textContent = form.q.value;
+  // searchTerms = mySearch.value;
+  // clubListItem.appendChild(mySearch);
 
   return clubListItem;
 }
